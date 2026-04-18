@@ -1,5 +1,4 @@
 1(a)#Student Information System
-program:
 roll_no <- 362        # Integer
 name <- "Sudharsan"   # Character
 cgpa <- 8.25          # Numeric
@@ -9,7 +8,6 @@ name
 cgpa
 pass
 1(b)#Employee Salary Record
-program:
 emp_id <- 362
 salary <- 1000000
 department <- "CSE"
@@ -19,7 +17,6 @@ salary
 department
 is_permanent
 1(c)#Online Shopping Cart
-program:
 product_name <- "Laptop"
 price <- 90000
 stock_available <- 19
@@ -29,7 +26,6 @@ price
 stock_available
 discount_eligible
 1(d)#Weather Monitoring System
-program:
 city <- "Karur"
 temperature <- 32.5
 rain <- FALSE
@@ -39,7 +35,6 @@ temperature
 rain
 wind_speed
 1(e)#Examination Result Processing
-program:
 subject <- "Computer Science"
 total_marks <- 100
 marks_obtained <- 90
@@ -49,7 +44,6 @@ total_marks
 marks_obtained
 result
 1(f)#Banking Application
-program:
 account_no <- 362123456
 holder_name <- "Sudharsan"
 balance <- 1000000.00
@@ -59,7 +53,6 @@ holder_name
 balance
 account_active
 1(g)#Movie Rating System
-program:
 movie_title <- "Leo"
 rating <- 9.0
 reviews <- 362
@@ -69,7 +62,6 @@ rating
 reviews
 available
 1(h)#Traffic Monitoring System
-program:
 vehicle_count <- 362
 location <- "Karur Main Road"
 avg_speed <- 50.5
