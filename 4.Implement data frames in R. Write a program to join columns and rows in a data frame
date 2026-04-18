@@ -1,0 +1,295 @@
+4(a)#College Student Record System
+students <-data.frame
+(
+RollNo= c(101, 102, 103),
+Name= c("Raven", "Meenamma", "Karthikeyan"),
+Dept= c("CSE", "ECE", "IT")
+)
+# Student marks
+marks <-data.frame
+(
+Marks = c(88, 82, 91)
+)
+# Join columns
+student_data
+<-
+cbind
+(students, marks)
+student_data
+# Add new student records
+new_students<-data.frame
+(
+RollNo= c(104),
+Name= c("Anjan"),
+Dept= c("CSE"),
+Marks= c(88)
+)
+final_data<-rbind
+(
+student_data,new_students
+)
+final_data
+4(b)#Employee Management System
+employee_details<-
+data.frame
+(
+EmpID= c(1, 2, 3),
+Name= c("Amirtha", "Snehan", "Rajan"),
+Dept= c("HR", "IT", "Finance")
+)
+salary_details<-data.frame
+(
+Salary = c(350000, 455000, 150000)
+)
+# Join columns
+employees <-cbind
+(
+employee_details,salary_details
+)
+employees
+# Add new employee
+new_employee<-data.frame
+(
+EmpID= 4,
+Name= "Nehan",
+Dept= "IT",
+Salary = 480000
+)
+employees <-rbind
+(employees,new_employee)
+employees
+4(c)#Hospital Patient Records
+patient_info<-data.frame
+(
+PatientID= c(201, 202),
+Name= c("Soorya", "Lakshman"),
+Age= c(45, 38)
+)
+treatment_cost<-data.frame
+(
+Cost = c(12000, 15000)
+)
+# Combine column-wise
+patient_records<-cbind
+(
+patient_info,treatment_cost
+)
+patient_records
+# Add new patient
+new_patient<-data.frame
+(
+PatientID= 203,
+Name= "Arya",
+Age= 50,
+Cost= 18000
+)
+patient_records<-rbind
+(
+patient_records,new_patient
+)
+patient_records
+4(d)#Product Inventory System
+products <-data.frame
+(
+ProductID= c(1, 2, 3),
+ProductName = c("Pen", "Book", "Bag")
+)
+stock <-data.frame
+(
+Quantity = c(100, 50, 30)
+)
+# Join columns
+inventory <-cbind
+(products, stock)
+inventory
+# Add new product
+new_product<-data.frame
+(
+ProductID= 4,
+ProductName = "Bottle",
+Quantity = 75
+)
+inventory <-rbind(inventory,new_product)
+inventory
+4(d)#University Academic Management System
+students <-data.frame
+(
+RollNo= c(1, 2, 3),
+Name= c("Aruna", "Balaji", "Charanya"),
+Dept= c("CSE", "ECE", "IT")
+)
+# Semester marks
+marks <-data.frame
+(
+Sem1 = c(78, 82, 90),
+Sem2 = c(80, 85, 88)
+)
+# Attendance
+attendance <-data.frame
+(
+Attendance = c(92, 88, 95)
+)
+# Combine all columns
+student_records<-cbind
+(students, marks, attendance)
+student_records
+# New admissions
+new_students<-data.frame
+(
+RollNo= c(4, 5),
+Name= c("Deepa", "Eshan"),
+Dept= c("CSE", "IT"),
+Sem1= c(85, 89),
+Sem2= c(87, 91),
+Attendance = c(90, 93)
+)
+# Add rows
+final_records<-rbind
+(
+student_records,new_students
+)
+final_records
+4(e)#Corporate Employee Payroll System
+emp_details<-data.frame
+(
+EmpID= c(101, 102),
+Name= c("Rahul", "Sneha"),
+Dept= c("IT", "HR")
+)
+# Salary components
+salary <-data.frame
+(
+Basic = c(30000, 35000),
+HRA= c(6000, 7000),
+DA= c(3000, 3500)
+)
+# Performance rating
+rating <-data.frame
+(
+Rating = c(4.5, 4.2)
+)
+# Merge column-wise
+payroll <-cbind
+(
+emp_details, salary, rating)
+payroll
+# Add new employee
+new_emp<-data.frame
+(
+EmpID= 103,
+Name= "Kiran",
+Dept= "Finance",
+Basic = 40000,
+HRA= 8000,
+DA= 4000,
+Rating = 4.8
+)
+payroll <-rbind
+(payroll,new_emp)
+payroll
+4(f)#Corporate Employee Payroll System
+patients <-data.frame
+(
+PatientID= c(201, 202),
+Name= c("Sureshwari", "Lakshmi"),
+Age= c(45, 38)
+)
+# Diagnosis
+diagnosis <-data.frame
+(
+Disease = c("Diabetes", "Hypertension")
+)
+# Billing
+billing <-data.frame
+(
+Amount = c(15000, 12000)
+)
+# Combine all
+hospital_data<-cbind
+(patients, diagnosis, billing)
+hospital_data
+# New patient record
+new_patient<-data.frame
+(
+PatientID= 203,
+Name = "Arjun",
+Age = 52,
+Disease = "Cardiac",
+Amount = 25000
+)
+hospital_data<-rbind
+(
+hospital_data,new_patient
+)
+hospital_data
+4(g)#Retail Sales Analytics System
+products <-data.frame
+(
+ProductID= c(1, 2, 3),
+ProductName = c("Mobile", "Laptop", "Tablet")
+)
+# Sales quantity
+sales_qty<-data.frame
+(
+UnitsSold= c(120, 80, 60)
+)
+# Revenue
+revenue <-data.frame
+(
+Revenue = c(1200000, 4000000, 1800000)
+)
+# Combine data
+sales_data<-cbind
+(products,sales_qty, revenue)
+sales_data
+# Add new product
+new_product<-data.frame
+(
+ProductID= 4,
+ProductName = "Smart Watch",
+UnitsSold= 90,
+Revenue = 900000
+)
+sales_data<-rbind
+(
+sales_data,new_product
+)
+sales_data
+4(h)#Smart Agriculture Monitoring System (Advanced)
+🌱
+field_info<-data.frame
+(
+FieldID= c(1, 2),
+Crop= c("Rice", "Wheat")
+)
+# Sensor data
+sensor_data<-data.frame
+(
+Moisture = c(45, 38),
+Temp= c(32, 29)
+)
+# Yield estimate
+yield <-data.frame
+(
+ExpectedYield= c(4.5, 3.8)
+)
+# Combine all
+agri_data<-cbind
+(
+field_info,sensor_data, yield)
+agri_data
+# New fi eld
+new_fi eld<-data.frame
+(
+FieldID= 3,
+Crop = "Maize",
+Moisture = 40,
+Temp = 31,
+ExpectedYield= 4.1
+)
+agri_data<-rbind
+(
+agri_data,new_fi eld
+)
+agri_data
+4(i)#University Academic Management System
