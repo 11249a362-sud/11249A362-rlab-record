@@ -1,121 +1,79 @@
-1(a)Student Information System
-Scenario:
-A college wants to store a student s roll number, name, CGPA, and pass status.
-Question:
-Identify suitable data types and write an R program to store and display the values.
+1(a)#Student Information System
 program:
 roll_no <- 362        # Integer
 name <- "Sudharsan"   # Character
 cgpa <- 8.25          # Numeric
 pass <- TRUE          # Logical
-
 roll_no
 name
 cgpa
 pass
-1(b)Employee Salary Record
-Scenario:
-A company wants to store employee ID, monthly salary, department name, and permanent
-employee status.
-Question:
-Write an R program using appropriate data types to store the information.
+1(b)#Employee Salary Record
 program:
 emp_id <- 362
 salary <- 1000000
 department <- "CSE"
 is_permanent <- TRUE
-
 emp_id
 salary
 department
 is_permanent
-1(c)Online Shopping Cart
-Scenario:
-An e-commerce application needs to store product price, product name, available stock, and
-discount eligibility.
-Question:
-Choose suitable data types and write an R program.
+1(c)#Online Shopping Cart
 program:
 product_name <- "Laptop"
 price <- 90000
 stock_available <- 19
 discount_eligible <- TRUE
-
 product_name
 price
 stock_available
 discount_eligible
-1(d)Weather Monitoring System
-Scenario:
-A weather station records temperature, city name, rainfall status, and wind speed.
-Question:
-Implement this using appropriate R data types.
+1(d)#Weather Monitoring System
 program:
 city <- "Karur"
 temperature <- 32.5
 rain <- FALSE
 wind_speed <- 10.2
-
 city
 temperature
 rain
 wind_speed
-1(e)Examination Result Processing
-Scenario:
-An exam cell stores subject name, total marks, marks obtained, and result status.
-Question:
-Write an R program using suitable variables and data types.
+1(e)#Examination Result Processing
 program:
 subject <- "Computer Science"
 total_marks <- 100
 marks_obtained <- 90
 result <- marks_obtained >= 40
-
 subject
 total_marks
 marks_obtained
 result
-1(f)Banking Application
-Scenario:
-A bank stores account number, account holder name, balance, and active account status.
-Question:
-Select suitable data types and implement using R.
+1(f)#Banking Application
 program:
 account_no <- 362123456
 holder_name <- "Sudharsan"
 balance <- 1000000.00
 account_active <- TRUE
-
 account_no
 holder_name
 balance
 account_active
-1(g)Movie Rating System
-Scenario:
-A movie app stores movie title, rating, number of reviews, and availability status.
-Question:
-Write an R program using correct data types.
+1(g)#Movie Rating System
 program:
 movie_title <- "Leo"
 rating <- 9.0
 reviews <- 362
 available <- TRUE
-
 movie_title
 rating
 reviews
 available
-1(h)Traffic Monitoring System
-Scenario:
-Traffic data includes vehicle count, location name, average speed, and congestion status.
-Question:
-Write an R program to store this information.
+1(h)#Traffic Monitoring System
 program:
 vehicle_count <- 362
 location <- "Karur Main Road"
 avg_speed <- 50.5
 congested <- TRUE
-
 vehicle_count
 location
 avg_speed
