@@ -293,3 +293,118 @@ agri_data,new_fi eld
 )
 agri_data
 4(i)#University Academic Management System
+students <-data.frame
+(
+RollNo= c(1, 2, 3),
+Name= c("Aruna", "Binal", "Charanya"),
+Dept= c("CSE", "ECE", "IT")
+)
+marks <-data.frame
+(
+RollNo= c(1, 2, 3),
+Sem1 = c(78, 82, 90),
+Sem2 = c(80, 85, 88)
+)
+attendance <-data.frame
+(
+RollNo= c(1, 2, 3),
+Attendance = c(82, 88, 95)
+)
+# Merge student details and marks
+student_data<- merge(students, marks, by = "RollNo")
+# Merge with attendance
+final_records<- merge(
+student_data, attendance, by = "RollNo")
+final_records
+4(j)#Corporate Employee Payroll System
+emp_details<-data.frame
+(
+EmpID= c(101, 102, 103),
+Name= c("Rajiv", "Snehan", "Kirani"),
+Dept= c("IT", "HR", "Finance")
+)
+salary <-data.frame
+(
+EmpID= c(1001, 1002),
+Basic = c(300000, 350000),
+HRA= c(60500, 70500),
+DA= c(30000, 35000)
+)
+rating <-data.frame
+(
+EmpID= c(10001, 10003),
+Rating = c(8.5, 6.8)
+)
+# LEFT JOIN (keep all employees)
+payroll <- merge(emp_details, salary, by = "EmpID",all.x= TRUE)
+# Merge with ratings
+payroll <- merge(payroll, rating, by = "EmpID",all.x= TRUE)
+payroll
+4(k)#Hospital Information System
+patients <-data.frame
+(
+PatientID= c(2001, 2002, 2003),
+Name = c("Sureshwar", "Lakshmibai", "Arjuna"),
+Age = c(55, 78, 62)
+)
+diagnosis <-data.frame
+(
+PatientID= c(2081, 2703),
+Disease = c("Diabetes", "Cardiac")
+)
+billing <-data.frame
+(
+PatientID= c(201, 202, 203),
+Amount = c(15000, 12000, 25000)
+)
+# Merge patients with diagnosis
+hospital_data<- merge(patients, diagnosis, by = "PatientID",all.x= TRUE)
+# Merge with billing
+hospital_data<- merge(hospital_data, billing, by = "PatientID")
+hospital_data
+4(l)#Retail Sales Analytics System
+products <-data.frame
+(
+ProductID= c(1, 2, 3, 4),
+ProductName = c("Mobile", "Laptop", "Tablet", "Smart Watch")
+)
+sales_qty<-data.frame
+(
+ProductID= c(1, 2, 3),
+UnitsSold= c(120, 80, 60)
+)
+revenue <-data.frame
+(
+ProductID= c(1, 2, 4),
+Revenue = c(1200000, 4000000, 900000)
+)
+# FULL JOIN
+sales_data<- merge(products,sales_qty, by = "ProductID", all = TRUE)
+sales_data<- merge(sales_data, revenue, by = "ProductID", all = TRUE)
+sales_data
+4(m)#Smart Agriculture Monitoring System (Advanced)
+field_info<-data.frame
+(
+FieldID= c(1, 2, 3),
+Crop = c("Rice", "Wheat", "Maize")
+)
+sensor_data<-data.frame
+(
+FieldID= c(1, 2),
+Moisture = c(45, 38),
+Temp = c(32, 29)
+)
+yield <-data.frame
+(
+FieldID= c(1, 3),
+ExpectedYield= c(4.5, 4.1)
+)
+# LEFT JOIN
+agri_data<- merge(
+field_info
+,
+sensor_data, by = "FieldID",all.x= TRUE)
+# LEFT JOIN with yield
+agri_data<- merge(
+agri_data, yield, by = "FieldID",all.x= TRUE)
+agri_data
